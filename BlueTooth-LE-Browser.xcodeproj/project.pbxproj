@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7029CD8D152DD27B00FCFFBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD8C152DD27B00FCFFBA /* UIKit.framework */; };
+		7029CD8F152DD27B00FCFFBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD8E152DD27B00FCFFBA /* Foundation.framework */; };
+		7029CD91152DD27B00FCFFBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */; };
+		7029CD97152DD27B00FCFFBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7029CD95152DD27B00FCFFBA /* InfoPlist.strings */; };
+		7029CD99152DD27B00FCFFBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029CD98152DD27B00FCFFBA /* main.m */; };
+		7029CD9D152DD27B00FCFFBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029CD9C152DD27B00FCFFBA /* AppDelegate.m */; };
+		7029CDA0152DD27B00FCFFBA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */; };
+		7029CDA3152DD27B00FCFFBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029CDA2152DD27B00FCFFBA /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueTooth-LE-Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7029CD8C152DD27B00FCFFBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7029CD8E152DD27B00FCFFBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7029CD94152DD27B00FCFFBA /* BlueTooth-LE-Browser-Info.plist */ = {isa = PBXFileReference; path = "BlueTooth-LE-Browser-Info.plist"; sourceTree = "<group>"; };
+		7029CD96152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7029CD98152DD27B00FCFFBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7029CD9A152DD27B00FCFFBA /* BlueTooth-LE-Browser-Prefix.pch */ = {isa = PBXFileReference; path = "BlueTooth-LE-Browser-Prefix.pch"; sourceTree = "<group>"; };
+		7029CD9B152DD27B00FCFFBA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7029CD9C152DD27B00FCFFBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7029CD9F152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7029CDA1152DD27B00FCFFBA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		7029CDA2152DD27B00FCFFBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7029CD85152DD27B00FCFFBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7029CD8D152DD27B00FCFFBA /* UIKit.framework in Frameworks */,
+				7029CD8F152DD27B00FCFFBA /* Foundation.framework in Frameworks */,
+				7029CD91152DD27B00FCFFBA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7029CD7D152DD27B00FCFFBA = {
+			isa = PBXGroup;
+			children = (
+				7029CD92152DD27B00FCFFBA /* BlueTooth-LE-Browser */,
+				7029CD8B152DD27B00FCFFBA /* Frameworks */,
+				7029CD89152DD27B00FCFFBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7029CD89152DD27B00FCFFBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7029CD8B152DD27B00FCFFBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7029CD8C152DD27B00FCFFBA /* UIKit.framework */,
+				7029CD8E152DD27B00FCFFBA /* Foundation.framework */,
+				7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7029CD92152DD27B00FCFFBA /* BlueTooth-LE-Browser */ = {
+			isa = PBXGroup;
+			children = (
+				7029CD9B152DD27B00FCFFBA /* AppDelegate.h */,
+				7029CD9C152DD27B00FCFFBA /* AppDelegate.m */,
+				7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */,
+				7029CDA1152DD27B00FCFFBA /* ViewController.h */,
+				7029CDA2152DD27B00FCFFBA /* ViewController.m */,
+				7029CD93152DD27B00FCFFBA /* Supporting Files */,
+			);
+			path = "BlueTooth-LE-Browser";
+			sourceTree = "<group>";
+		};
+		7029CD93152DD27B00FCFFBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7029CD94152DD27B00FCFFBA /* BlueTooth-LE-Browser-Info.plist */,
+				7029CD95152DD27B00FCFFBA /* InfoPlist.strings */,
+				7029CD98152DD27B00FCFFBA /* main.m */,
+				7029CD9A152DD27B00FCFFBA /* BlueTooth-LE-Browser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7029CD87152DD27B00FCFFBA /* BlueTooth-LE-Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueTooth-LE-Browser" */;
+			buildPhases = (
+				7029CD84152DD27B00FCFFBA /* Sources */,
+				7029CD85152DD27B00FCFFBA /* Frameworks */,
+				7029CD86152DD27B00FCFFBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueTooth-LE-Browser";
+			productName = "BlueTooth-LE-Browser";
+			productReference = 7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7029CD7F152DD27B00FCFFBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Collective Idea";
+			};
+			buildConfigurationList = 7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueTooth-LE-Browser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7029CD7D152DD27B00FCFFBA;
+			productRefGroup = 7029CD89152DD27B00FCFFBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7029CD87152DD27B00FCFFBA /* BlueTooth-LE-Browser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7029CD86152DD27B00FCFFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7029CD97152DD27B00FCFFBA /* InfoPlist.strings in Resources */,
+				7029CDA0152DD27B00FCFFBA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7029CD84152DD27B00FCFFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7029CD99152DD27B00FCFFBA /* main.m in Sources */,
+				7029CD9D152DD27B00FCFFBA /* AppDelegate.m in Sources */,
+				7029CDA3152DD27B00FCFFBA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7029CD95152DD27B00FCFFBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7029CD96152DD27B00FCFFBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7029CD9F152DD27B00FCFFBA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7029CDA4152DD27B00FCFFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		7029CDA5152DD27B00FCFFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7029CDA7152DD27B00FCFFBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Prefix.pch";
+				INFOPLIST_FILE = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7029CDA8152DD27B00FCFFBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Prefix.pch";
+				INFOPLIST_FILE = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueTooth-LE-Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7029CDA4152DD27B00FCFFBA /* Debug */,
+				7029CDA5152DD27B00FCFFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueTooth-LE-Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7029CDA7152DD27B00FCFFBA /* Debug */,
+				7029CDA8152DD27B00FCFFBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7029CD7F152DD27B00FCFFBA /* Project object */;
+}
