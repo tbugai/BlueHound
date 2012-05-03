@@ -20,14 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueTooth-LE-Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7029CD88152DD27B00FCFFBA /* BlueHound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7029CD8C152DD27B00FCFFBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7029CD8E152DD27B00FCFFBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7029CD94152DD27B00FCFFBA /* BlueTooth-LE-Browser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueTooth-LE-Browser-Info.plist"; sourceTree = "<group>"; };
+		7029CD94152DD27B00FCFFBA /* BlueHound-Info.plist */ = {isa = PBXFileReference; path = "BlueHound-Info.plist"; sourceTree = "<group>"; };
 		7029CD96152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7029CD98152DD27B00FCFFBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7029CD9A152DD27B00FCFFBA /* BlueTooth-LE-Browser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueTooth-LE-Browser-Prefix.pch"; sourceTree = "<group>"; };
+		7029CD9A152DD27B00FCFFBA /* BlueHound-Prefix.pch */ = {isa = PBXFileReference; path = "BlueHound-Prefix.pch"; sourceTree = "<group>"; };
 		7029CD9B152DD27B00FCFFBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7029CD9C152DD27B00FCFFBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7029CD9F152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		7029CD7D152DD27B00FCFFBA = {
 			isa = PBXGroup;
 			children = (
-				7029CD92152DD27B00FCFFBA /* BlueTooth-LE-Browser */,
+				7029CD92152DD27B00FCFFBA /* BlueHound */,
 				7029CD8B152DD27B00FCFFBA /* Frameworks */,
 				7029CD89152DD27B00FCFFBA /* Products */,
 			);
@@ -65,7 +65,7 @@
 		7029CD89152DD27B00FCFFBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */,
+				7029CD88152DD27B00FCFFBA /* BlueHound.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7029CD92152DD27B00FCFFBA /* BlueTooth-LE-Browser */ = {
+		7029CD92152DD27B00FCFFBA /* BlueHound */ = {
 			isa = PBXGroup;
 			children = (
 				7029CD9B152DD27B00FCFFBA /* AppDelegate.h */,
@@ -93,16 +93,17 @@
 				7029CDA9152DD54E00FCFFBA /* DeviceListTableViewController.h */,
 				7029CDAA152DD54E00FCFFBA /* DeviceListTableViewController.m */,
 			);
-			path = "BlueTooth-LE-Browser";
+			name = BlueHound;
+			path = "BlueHound";
 			sourceTree = "<group>";
 		};
 		7029CD93152DD27B00FCFFBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7029CD94152DD27B00FCFFBA /* BlueTooth-LE-Browser-Info.plist */,
+				7029CD94152DD27B00FCFFBA /* BlueHound-Info.plist */,
 				7029CD95152DD27B00FCFFBA /* InfoPlist.strings */,
 				7029CD98152DD27B00FCFFBA /* main.m */,
-				7029CD9A152DD27B00FCFFBA /* BlueTooth-LE-Browser-Prefix.pch */,
+				7029CD9A152DD27B00FCFFBA /* BlueHound-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7029CD87152DD27B00FCFFBA /* BlueTooth-LE-Browser */ = {
+		7029CD87152DD27B00FCFFBA /* BlueHound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueTooth-LE-Browser" */;
+			buildConfigurationList = 7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueHound" */;
 			buildPhases = (
 				7029CD84152DD27B00FCFFBA /* Sources */,
 				7029CD85152DD27B00FCFFBA /* Frameworks */,
@@ -122,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "BlueTooth-LE-Browser";
-			productName = "BlueTooth-LE-Browser";
-			productReference = 7029CD88152DD27B00FCFFBA /* BlueTooth-LE-Browser.app */;
+			name = BlueHound;
+			productName = "BlueHound";
+			productReference = 7029CD88152DD27B00FCFFBA /* BlueHound.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +137,7 @@
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Collective Idea";
 			};
-			buildConfigurationList = 7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueTooth-LE-Browser" */;
+			buildConfigurationList = 7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueHound" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7029CD87152DD27B00FCFFBA /* BlueTooth-LE-Browser */,
+				7029CD87152DD27B00FCFFBA /* BlueHound */,
 			);
 		};
 /* End PBXProject section */
@@ -250,9 +251,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Prefix.pch";
-				INFOPLIST_FILE = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BlueHound/BlueHound-Prefix.pch";
+				INFOPLIST_FILE = "BlueHound/BlueHound-Info.plist";
+				PRODUCT_NAME = BlueHound;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -261,9 +262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Prefix.pch";
-				INFOPLIST_FILE = "BlueTooth-LE-Browser/BlueTooth-LE-Browser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BlueHound/BlueHound-Prefix.pch";
+				INFOPLIST_FILE = "BlueHound/BlueHound-Info.plist";
+				PRODUCT_NAME = BlueHound;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -271,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueTooth-LE-Browser" */ = {
+		7029CD82152DD27B00FCFFBA /* Build configuration list for PBXProject "BlueHound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7029CDA4152DD27B00FCFFBA /* Debug */,
@@ -280,13 +281,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueTooth-LE-Browser" */ = {
+		7029CDA6152DD27B00FCFFBA /* Build configuration list for PBXNativeTarget "BlueHound" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7029CDA7152DD27B00FCFFBA /* Debug */,
 				7029CDA8152DD27B00FCFFBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

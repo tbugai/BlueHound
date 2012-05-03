@@ -72,7 +72,9 @@
   }
   
   for (NSString *key in [advertisementData allKeys]) {
-    NSLog(@"%@ : %@", key, [advertisementData objectForKey:key]);
+    
+    NSUInteger nodeId = 0;
+    NSLog(@"%@ : %u", key, nodeId);
   }
 }
 @end
