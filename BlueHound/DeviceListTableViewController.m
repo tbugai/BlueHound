@@ -8,6 +8,7 @@
 
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "DeviceListTableViewController.h"
+#import "BlueToothDevice.h"
 
 @implementation DeviceListTableViewController
 
@@ -57,9 +58,9 @@
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
   }
   
-  CBPeripheral *peripheral = [list objectAtIndex:indexPath.row];
-  [[cell textLabel] setText:peripheral.name];
-  [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%@", peripheral.UUID]];
+  BlueToothDevice *device = [list objectAtIndex:indexPath.row];
+  [[cell textLabel] setText:device.name];
+  [[cell detailTextLabel] setText:device.uuid];
   
   return cell;
 }

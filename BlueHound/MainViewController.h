@@ -14,11 +14,14 @@
   IBOutlet UIActivityIndicatorView  *scanningIndicator;
   IBOutlet UIButton                 *scanButton;
   NSTimer                           *scanTimer;
+  BOOL                              scanning;
 }
 
 @property (strong, nonatomic) DeviceListTableViewController *deviceTable;
 @property (strong, nonatomic) NSMutableArray *discoveredDevices;
 @property (strong, nonatomic) CBCentralManager *centralManager;
+
+- (IBAction)scanButtonToggled:(id)sender;
 
 
 @end

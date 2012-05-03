@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DeviceListTableViewController.h"
+#import "BlueToothDevice.h"
 
 @implementation MainViewController
 
@@ -25,6 +26,8 @@
   self.deviceTable.tableView.frame = CGRectMake(22,200,724,778);
   
   [self.view addSubview:self.deviceTable.tableView];
+  
+  
 }
 
 - (void)viewDidUnload
@@ -37,25 +40,44 @@
   return UIInterfaceOrientationPortrait;
 }
 
+- (IBAction)scanButtonToggled:(id)sender {
+  if (scanning) {
+    scanning = false;
+    [scanButton setTitle:@"Start Scanning" forState:UIControlStateNormal];
+    
+    [self stopScan];
+  } else {
+    scanning = true;
+    [scanButton setTitle:@"Stop Scanning" forState:UIControlStateNormal];
+    
+    [self startScan];
+  }
+}
+
 - (void)startScan {
   if (self.centralManager.state == CBCentralManagerStatePoweredOn) {
     NSLog(@"starting to scan...");
+    
+    self.discoveredDevices = nil;
+    self.discoveredDevices = [NSMutableArray array];
+    
     [scanningIndicator startAnimating];
     
     NSDictionary *scanOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:CBCentralManagerScanOptionAllowDuplicatesKey];
     [self.centralManager scanForPeripheralsWithServices:nil options:scanOptions];
-
-    scanTimer = [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(stopScan) userInfo:nil repeats:YES];
+      
+    scanTimer = [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(stopScan) userInfo:nil repeats:NO];
   }  
 }
 
 - (void)stopScan {
   NSLog(@"scanning ended");
   [scanningIndicator stopAnimating];
+  [scanTimer invalidate];
   
   [self.centralManager stopScan];
   
-  self.deviceTable.list = [discoveredDevices copy];
+  self.deviceTable.list = self.discoveredDevices;
   [self.deviceTable.tableView reloadData];
 }
 
@@ -64,6 +86,7 @@
     case CBCentralManagerStatePoweredOn:
       NSLog(@"Bluetooth is powered on");
       [self startScan];
+      scanning = true;
       break;
       
     default:
@@ -73,15 +96,11 @@
 }
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
-  NSLog(@"device found: %@", peripheral.name);
-  if (![self.discoveredDevices containsObject:peripheral]) {
-    [self.discoveredDevices addObject:peripheral];
-  }
+  NSLog(@"device found: %@", peripheral.UUID);
   
-  for (NSString *key in [advertisementData allKeys]) {
-    
-    NSUInteger nodeId = 0;
-    NSLog(@"%@ : %u", key, nodeId);
-  }
+  BlueToothDevice *device = [[BlueToothDevice alloc] init];
+  device.name = peripheral.name;
+  device.uuid = [NSString stringWithFormat:@"%@", peripheral.UUID];
+  [self.discoveredDevices addObject:device];
 }
 @end

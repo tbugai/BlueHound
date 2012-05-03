@@ -17,6 +17,7 @@
 		7029CDA3152DD27B00FCFFBA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029CDA2152DD27B00FCFFBA /* MainViewController.m */; };
 		7029CDAB152DD54E00FCFFBA /* DeviceListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029CDAA152DD54E00FCFFBA /* DeviceListTableViewController.m */; };
 		7029CDAD152DD75600FCFFBA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CDAC152DD75600FCFFBA /* CoreBluetooth.framework */; };
+		70B5B1601552D77F00547896 /* BlueToothDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B5B15F1552D77F00547896 /* BlueToothDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		7029CDA9152DD54E00FCFFBA /* DeviceListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListTableViewController.h; sourceTree = "<group>"; };
 		7029CDAA152DD54E00FCFFBA /* DeviceListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListTableViewController.m; sourceTree = "<group>"; };
 		7029CDAC152DD75600FCFFBA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		70B5B15E1552D77F00547896 /* BlueToothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothDevice.h; sourceTree = "<group>"; };
+		70B5B15F1552D77F00547896 /* BlueToothDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 				7029CD9B152DD27B00FCFFBA /* AppDelegate.h */,
 				7029CD9C152DD27B00FCFFBA /* AppDelegate.m */,
 				7029CD93152DD27B00FCFFBA /* Supporting Files */,
+				70B5B1611552D78D00547896 /* Models */,
 			);
 			path = BlueHound;
 			sourceTree = "<group>";
@@ -121,6 +125,15 @@
 				7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		70B5B1611552D78D00547896 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70B5B15E1552D77F00547896 /* BlueToothDevice.h */,
+				70B5B15F1552D77F00547896 /* BlueToothDevice.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +203,7 @@
 				7029CD9D152DD27B00FCFFBA /* AppDelegate.m in Sources */,
 				7029CDA3152DD27B00FCFFBA /* MainViewController.m in Sources */,
 				7029CDAB152DD54E00FCFFBA /* DeviceListTableViewController.m in Sources */,
+				70B5B1601552D77F00547896 /* BlueToothDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
