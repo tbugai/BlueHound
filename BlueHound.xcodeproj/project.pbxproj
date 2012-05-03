@@ -24,10 +24,10 @@
 		7029CD8C152DD27B00FCFFBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7029CD8E152DD27B00FCFFBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7029CD94152DD27B00FCFFBA /* BlueHound-Info.plist */ = {isa = PBXFileReference; path = "BlueHound-Info.plist"; sourceTree = "<group>"; };
+		7029CD94152DD27B00FCFFBA /* BlueHound-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueHound-Info.plist"; sourceTree = "<group>"; };
 		7029CD96152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7029CD98152DD27B00FCFFBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7029CD9A152DD27B00FCFFBA /* BlueHound-Prefix.pch */ = {isa = PBXFileReference; path = "BlueHound-Prefix.pch"; sourceTree = "<group>"; };
+		7029CD9A152DD27B00FCFFBA /* BlueHound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueHound-Prefix.pch"; sourceTree = "<group>"; };
 		7029CD9B152DD27B00FCFFBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7029CD9C152DD27B00FCFFBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7029CD9F152DD27B00FCFFBA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -84,17 +84,13 @@
 		7029CD92152DD27B00FCFFBA /* BlueHound */ = {
 			isa = PBXGroup;
 			children = (
+				70B5B15C1552D52400547896 /* Storyboards */,
+				70B5B15A1552D51900547896 /* Controllers */,
 				7029CD9B152DD27B00FCFFBA /* AppDelegate.h */,
 				7029CD9C152DD27B00FCFFBA /* AppDelegate.m */,
-				7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */,
-				7029CDA1152DD27B00FCFFBA /* MainViewController.h */,
-				7029CDA2152DD27B00FCFFBA /* MainViewController.m */,
 				7029CD93152DD27B00FCFFBA /* Supporting Files */,
-				7029CDA9152DD54E00FCFFBA /* DeviceListTableViewController.h */,
-				7029CDAA152DD54E00FCFFBA /* DeviceListTableViewController.m */,
 			);
-			name = BlueHound;
-			path = "BlueHound";
+			path = BlueHound;
 			sourceTree = "<group>";
 		};
 		7029CD93152DD27B00FCFFBA /* Supporting Files */ = {
@@ -106,6 +102,25 @@
 				7029CD9A152DD27B00FCFFBA /* BlueHound-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70B5B15A1552D51900547896 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7029CDA1152DD27B00FCFFBA /* MainViewController.h */,
+				7029CDA2152DD27B00FCFFBA /* MainViewController.m */,
+				7029CDA9152DD54E00FCFFBA /* DeviceListTableViewController.h */,
+				7029CDAA152DD54E00FCFFBA /* DeviceListTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		70B5B15C1552D52400547896 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7029CD9E152DD27B00FCFFBA /* MainStoryboard.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +139,7 @@
 			dependencies = (
 			);
 			name = BlueHound;
-			productName = "BlueHound";
+			productName = BlueHound;
 			productReference = 7029CD88152DD27B00FCFFBA /* BlueHound.app */;
 			productType = "com.apple.product-type.application";
 		};

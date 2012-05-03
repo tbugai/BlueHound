@@ -40,14 +40,21 @@
 - (void)startScan {
   if (self.centralManager.state == CBCentralManagerStatePoweredOn) {
     NSLog(@"starting to scan...");
-    [self.centralManager scanForPeripheralsWithServices:nil options:0];
-    scanTimer = [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(stopScan) userInfo:nil repeats:NO];
+    [scanningIndicator startAnimating];
+    
+    NSDictionary *scanOptions = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:CBCentralManagerScanOptionAllowDuplicatesKey];
+    [self.centralManager scanForPeripheralsWithServices:nil options:scanOptions];
+
+    scanTimer = [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(stopScan) userInfo:nil repeats:YES];
   }  
 }
 
 - (void)stopScan {
   NSLog(@"scanning ended");
+  [scanningIndicator stopAnimating];
+  
   [self.centralManager stopScan];
+  
   self.deviceTable.list = [discoveredDevices copy];
   [self.deviceTable.tableView reloadData];
 }

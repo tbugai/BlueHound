@@ -11,7 +11,9 @@
 #import "DeviceListTableViewController.h"
 
 @interface MainViewController : UIViewController<CBCentralManagerDelegate, CBPeripheralDelegate> {
-  NSTimer *scanTimer;
+  IBOutlet UIActivityIndicatorView  *scanningIndicator;
+  IBOutlet UIButton                 *scanButton;
+  NSTimer                           *scanTimer;
 }
 
 @property (strong, nonatomic) DeviceListTableViewController *deviceTable;
