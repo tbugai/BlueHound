@@ -23,7 +23,7 @@
   self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
  
   self.deviceTable = [[DeviceListTableViewController alloc] init];
-  self.deviceTable.tableView.frame = CGRectMake(22,200,724,778);
+  self.deviceTable.tableView.frame = CGRectMake(22,100,724,878);
   
   [self.view addSubview:self.deviceTable.tableView];
   
