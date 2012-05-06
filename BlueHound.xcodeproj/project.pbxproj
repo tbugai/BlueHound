@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700E9993155724AE00C3F5BE /* bluehound.png in Resources */ = {isa = PBXBuildFile; fileRef = 700E9992155724AE00C3F5BE /* bluehound.png */; };
 		7029CD8D152DD27B00FCFFBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD8C152DD27B00FCFFBA /* UIKit.framework */; };
 		7029CD8F152DD27B00FCFFBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD8E152DD27B00FCFFBA /* Foundation.framework */; };
 		7029CD91152DD27B00FCFFBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7029CD90152DD27B00FCFFBA /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700E9992155724AE00C3F5BE /* bluehound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluehound.png; sourceTree = "<group>"; };
 		7029CD88152DD27B00FCFFBA /* BlueHound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueHound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7029CD8C152DD27B00FCFFBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7029CD8E152DD27B00FCFFBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +102,7 @@
 		7029CD93152DD27B00FCFFBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				700E9992155724AE00C3F5BE /* bluehound.png */,
 				7029CD94152DD27B00FCFFBA /* BlueHound-Info.plist */,
 				7029CD95152DD27B00FCFFBA /* InfoPlist.strings */,
 				7029CD98152DD27B00FCFFBA /* main.m */,
@@ -189,6 +192,7 @@
 			files = (
 				7029CD97152DD27B00FCFFBA /* InfoPlist.strings in Resources */,
 				7029CDA0152DD27B00FCFFBA /* MainStoryboard.storyboard in Resources */,
+				700E9993155724AE00C3F5BE /* bluehound.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,15 +15,6 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BlueHound" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" id="94i-lE-L2y">
-                                <rect key="frame" x="26" y="0.0" width="684" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="57"/>
-                                <color key="textColor" red="0.02745098248" green="0.49803924560000001" blue="0.94117653369999998" alpha="1" colorSpace="deviceRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.074509806930000005" green="0.0" blue="0.72156864399999998" alpha="1" colorSpace="deviceRGB"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="orE-4i-eBn">
                                 <rect key="frame" x="552" y="20" width="181" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,6 +34,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.074509806930000005" green="0.0" blue="0.72156864399999998" alpha="1" colorSpace="deviceRGB"/>
                             </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bluehound.png" id="DOx-Ll-aBT">
+                                <rect key="frame" x="20" y="4" width="323" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -83,6 +78,9 @@
             <point key="canvasLocation" x="1200" y="-105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bluehound.png" width="1900" height="500"/>
+    </resources>
     <classes>
         <class className="DeviceListTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DeviceListTableViewController.h"/>
